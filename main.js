@@ -9,17 +9,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/checkHealth', (req, res) => {
-    res.send(JSON.stringify({
+     res.send({
         health: "OK!",
-        version: "1.0.0"
-        
-    }))
-    
-})
-
-app.get('/test', (req, res) => {
-    res.writeHead(302, {Location: 'https://www.google.com'})
-    res.end()
+        version: "1.0.0",
+        serverStatus: "Running"
+    })
 })
 
 app.listen(3000, () => {
