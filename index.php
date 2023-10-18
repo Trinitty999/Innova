@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="Section1">
-      
+    <div id="Header">
     </div>
+    <?php 
+        
+    ?>
 </body>
 </html>
